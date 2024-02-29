@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table>
+    {% for instance in instances %}
+    <tr>
+        <td><a href="{{ instance.id }}/">{{ instance.name }}</a></td>
+        <td>{{ instance.drscription }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
